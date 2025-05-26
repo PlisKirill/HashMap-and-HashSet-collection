@@ -9,23 +9,20 @@ public class Address {
         this.city = city;
     }
 
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
     public String getCountry() {
         return country;
     }
 
     public String getCity() {
         return city;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(country, city);
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        Address o = (Address) obj;
-        return country.equals(o.country) && city.equals(o.city);
     }
 
 }
